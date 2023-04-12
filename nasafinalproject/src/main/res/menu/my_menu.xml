@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/addFavorites"
+        android:icon="@drawable/favorite"
+        android:title="Favorite"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/removeFavorites"
+        android:icon="@drawable/delete"
+        android:title="Remove favorites"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/info"
+        android:title="About"
+        app:showAsAction="never" />
+
+</menu>
