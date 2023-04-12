@@ -61,10 +61,10 @@ class FetchData extends AsyncTask<Void, Void, Void> {
                 listURL.add(i, urlHTTPS);
                 listRover.add(i, roverName);
                 listCamera.add(i, cameraName);
-                System.out.println("img_src: " + urlHTTPS);
-                System.out.println("rover name: " + roverName);
-                System.out.println("camera name: " + cameraName);
-                System.out.println("List sizes: " + listRover.size() + ", " + listURL.size() + ", " + listCamera.size());
+//                System.out.println("img_src: " + urlHTTPS);
+//                System.out.println("rover name: " + roverName);
+//                System.out.println("camera name: " + cameraName);
+//                System.out.println("List sizes: " + listRover.size() + ", " + listURL.size() + ", " + listCamera.size());
 
             }
 
