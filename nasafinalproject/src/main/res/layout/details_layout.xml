@@ -54,14 +54,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginStart="16dp"
-        android:text="send receive goes here"
+        android:text=""
         app:layout_constraintTop_toBottomOf="@+id/timeDetail" />
 
     <TextView
         android:id="@+id/IDDetail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:layout_marginStart="16dp"
         android:text="URL goes here"
         android:autoLink="web"

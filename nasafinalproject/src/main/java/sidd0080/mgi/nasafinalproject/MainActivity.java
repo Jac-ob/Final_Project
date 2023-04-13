@@ -268,7 +268,7 @@ public class MainActivity extends AppCompatActivity {
                 holder.articleText.setText("Article: " + position);
 
                 String imageURL = object.getImageURL();
-                System.out.println(imageURL);
+//                System.out.println(imageURL);
                 try {
                     Picasso.get()
                             .load(imageURL)

@@ -12,11 +12,11 @@ public class NASAMessage {
     @ColumnInfo( name = "id" )
     public int id;
 
-    @ColumnInfo( name = "Rover")
-    protected String rover;
-
     @ColumnInfo(name = "ImageURL")
     protected String imageURL;
+
+    @ColumnInfo( name = "Rover")
+    protected String rover;
 
     @ColumnInfo(name = "Camera")
     protected String camera;
@@ -26,9 +26,9 @@ public class NASAMessage {
 
     public NASAMessage() {  }
 
-    public NASAMessage(String r, String i, String c, boolean sent){
-        rover = r;
+    public NASAMessage(String i, String r, String c, boolean sent){
         imageURL = i;
+        rover = r;
         camera = c;
         isSentButton = sent;
     }
@@ -45,7 +45,7 @@ public class NASAMessage {
     public String getImageURL(){
         return imageURL;
     }
-    public void setImageURL(String imageURl){
+    public void setImageURL(String imageURL){
         this.imageURL =  imageURL;
     }
 
