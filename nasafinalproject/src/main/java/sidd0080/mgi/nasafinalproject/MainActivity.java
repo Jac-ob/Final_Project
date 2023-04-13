@@ -1,6 +1,7 @@
 package sidd0080.mgi.nasafinalproject;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.media.MediaScannerConnection;
@@ -12,6 +13,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -210,6 +212,16 @@ public class MainActivity extends AppCompatActivity {
 
         //set a layout manager for the rows to be aligned vertically using only 1 column
         binding.recycleView.setLayoutManager( new LinearLayoutManager(this));
+
+        EditText editText = findViewById(R.id.searchEditText);
+
+        SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+
+        String textToSave = editText.getText().toString();
+        editor.putString("savedText", textToSave);
+
+        editor.apply();
 
         //SendButton: add the message typed in the edittext and time to the allMessages
         binding.searchButton.setOnClickListener( click -> {
