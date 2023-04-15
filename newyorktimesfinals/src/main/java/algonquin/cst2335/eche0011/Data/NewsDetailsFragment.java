@@ -20,9 +20,9 @@ public class NewsDetailsFragment extends Fragment {
     }
 
     /**
+     *@param container the parent view that the fragment's UI is going to be attached to
+     *@param savedInstanceState the saved state of the fragment
      * @param inflater is for the layoutInflater object
-     * @param container the parent view that the fragment's UI is going to be attached to
-     * @param savedInstanceState the saved state of the fragment
      * @return the fragment view
      */
     @Override

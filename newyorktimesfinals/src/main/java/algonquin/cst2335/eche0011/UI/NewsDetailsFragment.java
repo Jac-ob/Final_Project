@@ -13,11 +13,7 @@ import androidx.fragment.app.Fragment;
 import algonquin.cst2335.eche0011.Data.NewsData;
 import algonquin.cst2335.eche0011.databinding.DetailsLayoutBinding;
 
-/**
- * Class for fragment to display the detail of article
- * @auther Taeung Park
- * @version 1.0
- */
+
 public class NewsDetailsFragment extends Fragment {
     /** Declaration of NewsData */
     NewsData selected;
